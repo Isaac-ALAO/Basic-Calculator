@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Basic Calculator</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="java/main.js"></script>
+</head>
+<body class="area">
+    <div class="container">
+        <h1 class="Calc" id="Calc">Basic Calculator</h1>
+        <p class="display">
+            <input type="text" name="display" id="btndisplay" placeholder="0.00" disabled>
+        </p>
+        <p>
+            <div class="button">
+                <div class="btns1">
+                    <button value="1" id="btn1" onclick="showval(1)">1</button>
+                    <button id="btn2" value="2" onclick="showval(2)">2</button>
+                    <button id="btn3" value="3" onclick="showval(3)">3</button>
+                    <button id="btnPlus" value="+" onclick="operator('+')">+</button>
+                </div>
+                <br>
+                    <div class="btns2">
+                    <button id="btn4" value="4" onclick="showval(4)">4</button>
+                    <button id="btn5" value="5" onclick="showval(5)">5</button>
+                    <button id="btn6" value="6" onclick="showval(6)">6</button>
+                    <button id="btn-" value="-" onclick="operator('-')">-</button>
+                </div>
+                <br>
+                <div class="btns3">
+                    <button id="btn7" value="7" onclick="showval(7)">7</button>
+                    <button id="btn8" value="8" onclick="showval(8)">8</button>
+                    <button id="btn9" value="9" onclick="showval(9)">9</button>
+                    <button id="btnMult" value="*" onclick="operator('*')">*</button>
+                </div>
+                <br>
+                <div class="btns4">
+                    <button id="btnDivs" value="/" onclick="operator('/')">/</button>
+                    <button id="btn0" value="0" onclick="showval(0)">0</button>
+                    <button id="btnStp" value="." onclick="operator('.')">.</button>
+                    <button id="btnEq" value="="  onclick="equals('=')">=</button>
+                </div>
+                <br>
+                <button id="btnClr" onclick="Clear('')">Clr</button>
+                <button value="X" id="btnX" disabled>X</button>
+                <button value="X" id="btnx" disabled>X</button>
+                <button value="X" id="btnbckspc" onclick="back()">Bs</button>
+            </div>
+        </p>
+    </div>
+</body>
+</html>
